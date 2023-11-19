@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Pet finder</string>
+    <string name="error_text">Error Please Try Again</string>
+</resources>

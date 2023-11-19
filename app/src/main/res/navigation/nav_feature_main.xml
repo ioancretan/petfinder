@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_feature_main"
+    app:startDestination="@id/fragment_home">
+
+    <fragment
+        android:id="@+id/fragment_home"
+        android:name="com.ioan.animals.presentation.animalList.AnimalsFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_animals">
+
+        <action
+            android:id="@+id/action_root_to_content_page"
+            app:destination="@id/fragment_animal_details" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_animal_details"
+        android:name="com.ioan.animals.presentation.animalDetail.AnimalDetailsFragment"
+        android:label="Favorites"
+        tools:layout="@layout/fragment_animal_details">
+
+    </fragment>
+
+
+</navigation>
